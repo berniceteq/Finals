@@ -1,0 +1,180 @@
+/* Reset some default browser styles */
+body {
+margin: 0;
+padding: 0;
+height: 100vh;
+background: linear-gradient(180deg, #0A2353AA, #56E1E980, #BB63FF, #5B58EB, #112C70C9);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+}
+
+
+/* Main container */
+.container{
+position: relative;
+width: 100%;
+max-width: 1700px;
+height: 100vh;
+overflow: hidden;
+}
+
+.logo {
+position: relative;
+width: 100%;
+max-width: 1440px;
+height: 100vh;
+
+}
+
+.top-design{  
+position: absolute;
+width: 983px;
+top: -1px;
+height: 181px;
+left: -10px;
+}
+
+
+/* Bot character image */
+.top-image {
+position: absolute;
+top: 40px;
+left: 50%;
+transform: translateX(-50%);
+width: 120px;
+}
+
+/* Login box */
+.login-box {
+position: relative;
+margin: 0 auto;
+top: 200px;
+width: 380px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 30px;
+padding: 40px 30px;
+backdrop-filter: blur(10px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+/* Login Title */
+.login-box h2 {
+text-align: center;
+color: white;
+font-size: 22px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+/* Input fields */
+.input-group {
+margin-bottom: 20px;
+position: relative;
+}
+
+.input-group input {
+width: 350px;
+padding: 12px 20px;
+border: none;
+border-radius: 30px;
+background: rgba(255, 255, 255, 0.7);
+font-size: 14px;
+}
+
+.input-group input::placeholder {
+color: #5e5e5e;
+}
+
+/* Eye icon placeholder */
+.toggle-password {
+position: absolute;
+right: 10px;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+}
+
+/* Options row */
+.options {
+display: flex;
+justify-content: space-between;
+font-size: 12px;
+margin-bottom: 20px;
+}
+
+.options label {
+color: white;
+}
+
+.options a {
+color: white;
+text-decoration: none;
+}
+
+/* Sign In Button */
+.signin-btn {
+width: 100%;
+padding: 12px;
+background-color: #00C70D;
+color: white;
+border: none;
+border-radius: 30px;
+font-weight: 700;
+cursor: pointer;
+}
+
+.signin-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Social login */
+.or {
+text-align: center;
+color: white;
+font-size: 13px;
+margin: 10px 0;
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-bottom: 30px;
+margin-top: 20px;
+}
+
+.social-icons img {
+width: 20px;
+height: 20px;
+cursor: pointer;
+}
+
+/* Sign up section */
+.signup {
+text-align: center;
+color: white;
+font-size: 13px;
+}
+
+.signup a {
+color: #003AFF;
+text-decoration: none;
+font-weight: 700;
+}
+
+
+.bot-design{  
+position: absolute;
+width: 983px;
+bottom: -1px;
+height: 150px;
+right: -300px;
+z-index: -1;
+}

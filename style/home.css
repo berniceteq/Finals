@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../img/Rectangle\ 1.png); /* use your image name */
+  background-size: cover;             /* Ensures image fills the screen */
+  background-position: center;        /* Keeps the image centered */
+  background-repeat: no-repeat;       /* Prevents tiling */
+  min-height: 100vh;                  /* Makes sure body fills the full screen */
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 55px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 40px;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.left-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.left-section h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.category-card {
+  background: conic-gradient(
+    from 180deg at 50% 50%, 
+    #112C70C9,   /* purple with transparency */
+    #5B58EB,
+    #BB63FF,
+    #56E1E980,   /* purpleish with transparency */
+    #0A2353AA,   /* dark blue with transparency */
+    #112C70C9    /* repeat first color for smooth loop */
+  );
+  border-radius: 20px;
+  padding: 20px 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 160px;               /* set desired width */
+  height: 130px;              /* set desired height */
+  object-fit: contain;       /* keeps aspect ratio, avoids squishing */
+  margin-top: 10px;   
+}
+
+.category-card p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section img {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 10px;
+}

@@ -1,0 +1,145 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(180deg, #0A2353AA, #56E1E980, #BB63FF, #5B58EB, #112C70C9);
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+/* Top-right Nav Bar */
+header {
+  position: absolute;
+  top: 33px;
+  right: 62px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+
+nav a.active {
+  font-weight: bold;
+}
+
+.main-container {
+width: 100%;
+max-width: 1000px;
+padding: 60px;
+margin-top: 100px;
+}
+
+.edit-profile-card {
+background-color: #ffffff;
+border-radius: 48px;
+padding: 20px;
+overflow: hidden;
+}
+
+.profile-wrapper {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.profile-photo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #000000;      /* Blue background */
+  border-radius: 50%;       /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo img:first-child {
+  width: 95%;               /* Slightly smaller so blue shows around */
+  height: 95%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.plus-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  z-index: 3;
+}
+
+.form {
+background: #1B2F73;
+border-radius: 48px;
+padding: 150px;
+color: white;
+z-index: -3;
+text-align: center;
+height: 500px;
+margin-top: -100px;
+}
+
+.form label {
+display: block;
+margin-top: 10px;
+margin-bottom: 15px;
+font-weight: 600;
+text-align: left;
+padding-left: 30px;
+}
+
+.form input {
+width: 500px;
+padding: 20px;
+border-radius: 30px;
+border: none;
+margin-bottom: 10px;
+font-size: 16px;
+}
+    
+
+.save {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.save button {
+  padding: 10px 50px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.save button:hover {
+  background-color: #218838;
+}
